@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey form project!</title>
+    <link rel="stylesheet" type="text/css" href="surveyform.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <div class="survey-wrapper glow2">
+      <div class="survey-form-wrapper">
+        <div class="header">
+            <h1 id="title">Veganism survey</h1>
+        </div>
+
+        <form id="survey-form" class="main-form" action="#" method="post">
+          <div>
+            <p  id="description" class="glow">Tracking open-mindedness regarding veganism!</p>
+          </div>
+
+          <div class="row">
+            <label id="name-label" class="glow">* Name: <input id="name" type="text" name="name" required placeholder="Enter your name"></label>
+          </div>
+          <div class="row">
+            <label id="email-label" class="glow">* Email: <input id="email" type="Email" name="email" required placeholder="Enter your email"></label>
+          </div>
+          <div class="row">
+              <label id="age-label" class="glow">Age: <input id="number" type="number" min="0" max="125" name="age" placeholder="Enter your age"></label>
+          </div>
+          <div class="row glow">
+            <label id="consumption-label" class="glow">Meat consumption: </label>
+            <select class="dropdown" name="drop-down">
+              <option value="select an option">select an option</option>
+              <option value="none">none</option>
+              <option value="one-meal">1 meal/day</option>
+              <option value="two-meals">2 meals/day</option>
+              <option value="three-meals">3 meals/day</option>
+            </select>
+          </div>
+          <div class="row checkbox-row">
+            <label id="vegan-friends" class="glow"># of vegan friends/family</label><br>
+            <label><input type="checkbox" name="friends" value="0" >0</label><br>
+            <label><input type="checkbox" name="friends" value="1-3"> 1 - 3</label>
+            <label><input type="checkbox" name="friends" value="3-6"> 3 - 6</label>
+            <label><input type="checkbox" name="friends" value="6-9"> 6 - 9</label>
+            <label><input type="checkbox" name="friends" value="more"> More</label>
+          </div>
+          <div class="row radio-row">
+            <label id="vegan-brands"><span class="glow">Check any brands you have heard of</span></label><br>
+            <label><input type="radio" name="brands1" value="brands">Gardein</label>
+            <label><input type="radio" name="brands2" value="brands">Morning Star</label>
+            <label><input type="radio" name="brands3" value="brands">Boca</label><br>
+            <label><input type="radio" name="brands4" value="brands">Toffuti</label>
+            <label><input type="radio" name="brands5" value="brands">Silk</label>
+          </div>
+
+          <div class="row">
+            <label class="glow">Please enter any additional questions or comments below:</label><br>
+            <div class="text-area">
+                <textarea id="text-area" name="name" rows="8" cols="50"></textarea><br>
+            </div>
+            <input id="submit" type="submit" class="button" name="button" value="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

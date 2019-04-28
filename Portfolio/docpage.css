@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+  "side main"
+  ;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.side-bar{
+  grid-area: side;
+  position: fixed;
+
+  background-color: gray;
+  padding: 1em;
+  padding-bottom: 1.5em;
+  border: 1px solid black;
+}
+
+#nav-header {
+  border: 2px solid black;
+  padding: 1em;
+  padding-bottom:1em;
+  margin-top: 1em;
+  text-align: center;
+  background-color: orange;
+  font-size: 2em;
+}
+
+nav a {
+  color: orange;
+  text-shadow: 1px 1px black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.main {
+  grid-area: main;
+  background-color: lightgray;
+  padding: 1em;
+  margin-left: -2.3vw;
+  font-size: 1.2em;
+  border: 1px solid black;
+}
+
+.code-well {
+  background-color: gray;
+  padding: 1em;
+  border: 1px solid black;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  border-radius: 25px;
+
+  box-shadow: 5px 5px 3px 3px gray;
+}
+.black-well {
+  background-color: black;
+  padding: 1em;
+  color: white;
+
+  border-radius: 25px;
+}
+
+.white-well {
+  background-color: white;
+  padding: 1em;
+  color: black;
+
+  border-radius:25px;
+}
+
+.second-line {
+  margin-left: 20px;
+}
+
+.third-line {
+  margin-left: 40px;
+}
+
+.fourth-line {
+  margin-left: 20px;
+}
+
+.fifth-line {
+  margin-left: 65px;
+}
+.sixth-line {
+  margin-left: 45px;
+}
+.seventh-line {
+  margin-left: 28px;
+}
+
+.eigth-line {
+  margin-left: 7px;
+}
+
+.ninth-line {
+  margin-left: 5px;
+}
+.code-line {
+  margin-left: 40px;
+}
+
+
+.section-header {
+  font-size: 1.5em;
+  text-decoration: underline;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#data-types-table, tr, td {
+  border: 2px solid black;
+  padding: .5em;
+  border-collapse: collapse;
+}
+
+h6.section-header {
+  font-size: 1.1em;
+}
+
+#Methods ul {
+  margin-top: 2vw;
+}
+li span {
+  font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "side"
+    "main"
+    ;
+  }
+
+  nav li {
+    display: inline;
+    font-size: 1em;
+    position: relative;
+    top: 2vw;
+  }
+
+  nav li a {
+    padding: 1em;
+  }
+}

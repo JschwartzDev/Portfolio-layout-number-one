@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="docpage.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="side-bar">
+        <nav id="navbar">
+          <header>
+            <h3 id="nav-header">Java docs</h3>
+          </header>
+          <ul>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#Integrated_Development_Environment">IDE</a></li>
+            <li><a href="#Data_Types">Data types</a></li>
+            <li><a href="#Declaring_(Creating)_Variables">Declaring Variables</a></li>
+            <li><a href="#Variable_Scope">Variable scope</a></li>
+            <li><a href="#Imports">Imports</a></li>
+            <li><a href="#Classes">Classes</a></li>
+            <li><a href="#Methods">Methods</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main id="main-doc" class="main">
+        <section id="Introduction" class="main-section">
+          <header>
+            <h1 class="section-header">Introduction:</h1>
+          </header><br>
+          <p>Java is a popular programming language, created in 1995.
+             It is owned by Oracle, and more than <span class="bold">3 Billion</span> devices run Java.
+             It is used for: Mobile applications (specially Android apps), Desktop applications, Web applications,
+             Web servers and application servers, Games, Database connections, And much much more!</p>
+
+             <p><br>Some pcs might have java already installed. To check if you have Java installed on a Windows PC,
+               search in the start bar for Java or type the following in Command Prompt (cmd.exe):</p>
+
+              <div class="code-well">
+                <div class="black-well">
+                  <code>C:\Users\Your Name> Java -version</code>
+                </div>
+              </div>
+              <p>If Java is installed, you will see something like this (depending on version):</p><br>
+              <div class="code-well">
+                <div class="black-well">
+                  <code>java version "11.0.1" 2018-10-16 LTS<br>
+                        Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)<br>
+                        Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)<br></code>
+                </div>
+              </div>
+              <p>In Java, every application begins with a class name, and that class must match the filename.
+                Lets createour first Java file, called MyClass.java, which can be done in any text editor (like Notepad).
+                The file should contain a "Hello World" message, which is written with the following code:
+              </p><br>
+              <div class="code-well">
+                <div class="white-well">
+                  <code>
+                    <span class="first-line">public myClass {</span><br>
+                      <span class="second-line">     public static void main(String[] args){</span><br>
+                        <span class="third-line">System.out.println("Hello World!");</span><br>
+                      <span class="fourth-line">}</span><br>
+                    <span class="ninth-line">}</span><br>
+                  </code>
+                </div>
+              </div>
+              <p>
+                Don't worry if you dont understand the code above - we will discuss it in detail
+                in later chapters. For now, focus on howto runthe code above. Save the code in Notepad as
+                "MyClass.java". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file,
+                and type "javac MyClass.java":
+              </p>
+              <div class="code-well">
+                <div class="black-well">
+                  <code>C:\Users\Your Name>java MyClass</code>
+                </div>
+              </div>
+              <p>Thiswill compile your code. If there are no errors inthe code, the command prompt
+                will take you to the next line.  Now, type "java MyClass" to run the file:
+              </p>
+              <div class="code-well">
+                <div class="black-well">
+                  <code>C:\Users\Your Name>java MyClass</code>
+                </div>
+              </div>
+              <p>the code should read:</p>
+              <div class="code-well">
+                <div class="black-well">
+                  <code>Hello World!</code>
+                </div>
+              </div>
+              <p>Congratulations, you have written and executed your first java program!</p><br><br>
+        </section>
+        <section id="Integrated_Development_Environment" class="main-section">
+          <header>
+            <h1 class="section-header">Integrated Development Environment:</h1>
+          </header>
+          <p>
+            An integrated development environment (IDE) is a software suite that consolidates basic tools required to write and test software.
+            Developers use numerous tools throughout software code creation, building and testing. Development tools often
+            include text editors, code libraries, compilers and test platforms. Without an IDE, a developer must select,
+            deploy, integrate and manage all of these tools separately. An IDE brings many of those development-related
+            tools together as a single framework, application or service. The integrated toolset is designed to simplify
+            software development and can identify and minimize coding mistakes and typos. Some IDEs are open source,
+            while others are commercial offerings. An IDE can be a standalone application or it can be part of a larger
+            package.<br><br>
+            An IDE typically contains a code editor, a compiler or interpreter, and a debugger, accessed through a single
+            graphical user interface (GUI). The user writes and edits source code in the code editor. The compiler
+            translates the source code into a readable language that is executable for a computer. And the debugger tests
+            the software to solve any issues or bugs. An IDE can also contain features such as programmable editors,
+            object and data modeling, unit testing, a source code library and build automation tools. An IDE's toolbar
+            looks much like a word processor's toolbar. The toolbar facilitates color-based organization, source-code
+            formatting, error diagnostics and reporting, and intelligent code completion. Through an IDE's interface,
+            a developer or team of developers can compile and execute code incrementally and manage changes to source code
+            in a uniform manner. IDEs are typically designed to integrate with third-party version control libraries,
+            such as GitHub and Apache's Subversion. An IDE can support model-driven development (MDD).
+            A developer working with an IDE starts with a model, which the IDE translates into suitable code.
+            The IDE then debugs and tests the model-driven code, with a high level of automation. Once the build is
+            successful and properly tested, it can be deployed for further testing through the IDE or other tools outside
+            of the IDE.<br><br>
+
+            My personal recommendation, as far as Java IDES are concerned, would be Eclipse.  There are multiple different
+            versions of the Eclipse IDE so make sure to read through and find the IDE you feel fits your needs.
+          </p>
+        </section>
+        <section id="Data_Types" class="main-section">
+          <header id="data-types" class="section-header">
+            <h3>Data Types</h3>
+          </header>
+          <table id="data-types-table">
+            <tr class="top-row">
+              <td>Type</td>
+              <td>Description</td>
+              <td>Default</td>
+              <td>Size</td>
+              <td>Example literals</td>
+            </tr>
+            <tr>
+              <td>boolean</td>
+              <td>true or false</td>
+              <td>false</td>
+              <td>1 bit</td>
+              <td>true, false</td>
+            </tr>
+            <tr>
+              <td>byte</td>
+              <td>twos complement integer</td>
+              <td>0</td>
+              <td>8 bits</td>
+              <td>(none)</td>
+            </tr>
+            <tr>
+              <td>char</td>
+              <td>Unicode character</td>
+              <td>\u0000</td>
+              <td>16 bits</td>
+              <td>'a', '\u0041', '\101', '\\', '\'', '\n', 'ß'</td>
+            </tr>
+            <tr>
+              <td>short</td>
+              <td>twos complement integer</td>
+              <td>0</td>
+              <td>16 bits</td>
+              <td>(none)</td>
+            </tr>
+            <tr>
+              <td>int</td>
+              <td>twos complement integer</td>
+              <td>0</td>
+              <td>16 bits</td>
+              <td>-2, -1, 0, 1, 2</td>
+            </tr>
+            <tr>
+              <td>long</td>
+              <td>twos complement integer</td>
+              <td>0</td>
+              <td>64 bits</td>
+              <td>-2L, -1L, 0L, 1L, 2L</td>
+            </tr>
+            <tr>
+              <td>float</td>
+              <td>IEEE 754 floating point</td>
+              <td>0.0</td>
+              <td>32 bits</td>
+              <td>1.23e100f, -1.23e-100f, .3f, 3.14F</td>
+            </tr>
+            <tr>
+              <td>double</td>
+              <td>IEEE 754 floating point</td>
+              <td>0.0</td>
+              <td>64 bits</td>
+              <td>1.23456e300d, -1.23456e-300d, 1e1d</td>
+            </tr>
+          </table>
+        </section>
+        <section id="Declaring_(Creating)_Variables" class="main-section">
+          <header>
+            <h3 id="declaring-variables" class="section-header">Declaring (Creating) Variables:</h3><br>
+          </header>
+          <p>To create a variable, you must specify the type and assign it a value:</p><br>
+          <div class="code-well">
+            <div class="white-well">
+              <code>type variable = value;</code>
+            </div>
+          </div>
+          <p>Where type is one of Java's types (such as int or String), and variable is the name of the
+            variable (such as x or name). The equal sign is used to assign values to the variable.
+            To create a variable that should store text, look at the following example:
+          </p>
+          <div class="code-well">
+            <div class="white-well">
+              <code>String name = "James";<br> System.out.println(name);</code>
+            </div>
+          </div>
+          <p>To create a variable that should store a number, look at the following example:</p><br>
+          <div class="code-well">
+            <div class="white-well">
+              <code>int num = 25;<br> System.out.println(num);</code>
+            </div>
+          </div>
+          <p>This will be the format for declaring any of the 8 different data types as variables.</p>
+        </section>
+        <section id="Variable_Scope" class="main-section">
+          <header id="variable-scope" class="section-header">
+            <h3>Variable Scope:</h3>
+          </header>
+          <p>The scope of a variable defines the section of the code in which the variable is visible.
+             As a general rule, variables that are defined within a block are not accessible outside that block.
+             The lifetime of a variable refers to how long the variable exists before it is destroyed.
+             Destroying variables refers to deallocating the memory that was allotted to the variables when declaring
+             it. We have written a few classes till now. You might have observed that not all variables are the same.
+             The ones declared in the body of a method were different from those that were declared in the class itself.
+             There are there types of variables: instance variables, formal parameters or local variables and local
+             variables.
+           </p><br>
+           <h6 class="section-header">Instance variables:</h6>
+           <p>Instance variables are those that are defined within a class itself and not in any method or constructor
+             of the class. They are known as instance variables because every instance of the class (object) contains
+             a copy of these variables. The scope of instance variables is determined by the access specifier that is
+             applied to these variables. We have already seen about it earlier. The lifetime of these variables is the
+             same as the lifetime of the object to which it belongs. Object once created do not exist for ever.
+             They are destroyed by the garbage collector of Java when there are no more reference to that object.
+             We shall see about Java's automatic garbage collector later on.
+           </p>
+
+           <h6 class="section-header">Argument variables:</h6><br>
+           <p>These are the variables that are defined in the header oaf constructor or a method. The scope of these
+             variables is the method or constructor in which they are defined. The lifetime is limited to the time for
+             which the method keeps executing. Once the method finishes execution, these variables are destroyed.
+           </p>
+           <h6 class="section-header">Local variables:</h6>
+           <p>A local variable is the one that is declared within a method or a constructor (not in the header).
+             The scope and lifetime are limited to the method itself. One important distinction between these three
+             types of variables is that access specifiers can be applied to instance variables only and not to argument
+             or local variables. In addition to the local variables defined in a method, we also have variables that
+             are defined in bocks life an if block and an else block. The scope and is the same as that of the block
+             itself. </p>
+        </section>
+        <section id="Imports" class="main-section">
+          <header>
+            <h3 class="section-header">Imports:</h3>
+          </header>
+          <p>import declarations (not statements) are essentially short-hand enabler at the source code level: it allows you to refer to a type or a static member using a single identifier (e.g. List, min) as opposed to the fully qualified name (e.g. java.util.List, Math.min).
+            import declaration section is a compile-time element of the source codes, and has no presence at run-time.
+            In JVM bytecodes, type names are always fully qualified, and unless you're using a poorly written compiler,
+            the binary should only contain names for types that are actually being used.
+            Class loaders are used for an entirely different concept, and has nothing to do with import feature at all.
+          </p><br>
+          <p>An import declaration allows a static member or a named type to be referred to by a simple name that consists of a single identifier. Without the use of an appropriate import declaration, the only way to refer to a type declared in another package, or a static member of another type, is to use a fully qualified name.
+            A single-type-import declaration imports a single named type, by mentioning its canonical name.
+            A type-import-on-demand declaration imports all the accessible types of a named type or package as needed.
+            It is a compile time error to import a type from the unnamed package.
+            A single static import declaration imports all accessible static members with a given name from a type,
+            by giving its canonical name.
+            A static-import-on-demand declaration imports all accessible static members of a named type as needed.</p>
+        </section>
+        <section id="Classes" class="main-section">
+          <header>
+            <h3 class="section-header">Classes:</h3><br>
+          </header>
+          <p>A class is nothing but a blueprint or a template for creating different objects which defines its
+            properties and behaviors. Java class objects exhibit the properties and behaviors defined by its class.
+            A class can contain fields and methods to describe the behavior of an object.
+            Methods are nothing but members of a class that provide a service for an object or perform
+            some business logic. Java fields and member functions names are case sensitive. Current states of a
+            class’s corresponding object are stored in the object’s instance variables. Methods define the operations
+            that can be performed in java programming.</p><br>
+            <p>Below is an example showing the Objects and Classes of the Cube class that defines 3 fields namely
+              length, breadth and height. Also the class contains a member function getVolume().
+            </p>
+              <div class="code-well">
+                <div class="white-well">
+                  <code><span class="first-line">public class Cube {</span><br>
+                    <span class="second-line">public static void main(String[] args){</span><br>
+                      <span class="code-line">int length;</span><br>
+                      <span class="code-line">int breadth;</span><br>
+                      <span class="code-line">int height;</span><br><br>
+                      <span class="third-line">public getVolume() {</span><br>
+                        <span class="fifth-line">return (length * breadth * height);</span><br>
+                      <span class="sixth-line">}</span><br>
+                    <span class="seventh-line">}</span><br>
+                    <span class="eigth-line">}</span><br>
+                  </code>
+                </div>
+              </div>
+        </section>
+        <section id="Methods" class="main-section">
+          <header>
+            <h3 class="section-header">Methods:</h3>
+          </header>
+          <p>A Java method is a collection of statements that are grouped together to perform an operation.
+            When you call the System.out.println() method, for example, the system actually executes several statements
+            in order to display a message on the console. Now you will learn how to create your own methods with or
+            without return values, invoke a method with or without parameters, and apply method abstraction in the
+            program design.
+          </p><br>
+          <h6 class="section-header">Creating Methods:</h6><br>
+          <p>Considering the following example to explain the syntax of a method −</p><br>
+          <div class="code-well">
+            <div class="white-well">
+              <code>
+                <span class="first-line">public static int(int a, int b) {</span><br>
+                  <span class="second-line">//body</span><br>
+                <span class="eight-line">}</span><br>
+              </code>
+            </div>
+          </div>
+          <ul>
+            <li><span>public static</span> - modifier</li>
+            <li><span>int</span> - return type</li>
+            <li><span>method name</span> - name of method</li>
+            <li><span>a,b</span> - formal parameters</li>
+            <li><span>int a, int b</span> - list of parameters</li>
+          </ul><br>
+          <h6 class="section-header">Method calling:</h6><br>
+          <p>For using a method, it should be called. There are two ways in which a method is called i.e.,
+            method returns a value or returning nothing (no return value). The process of method calling is simple.
+            When a program invokes a method, the program control gets transferred to the called method. This called
+            method then returns control to the caller in two conditions, when either the return statement is executed
+            or it reaches the method ending close bracket.</p><br>
+            <p>for more info please feel free to find a tutorial playlist on YouTube.com</p>
+        </section>
+
+        <div class="reference">
+          <p>All of this information was gathered across various websites.</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

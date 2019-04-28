@@ -1,0 +1,346 @@
+
+* {
+  margin: 0px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "header header"
+  "left-panel right-panel"
+  "deals deals"
+  "footer footer"
+  ;
+
+}
+
+#header {
+  grid-area: header;
+  background-color: #000000;
+  padding: 0em;
+  color: white;
+
+  border: 1px solid white;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 4vw;
+}
+
+.nav-bar-div {
+  background-color: black;
+  padding: 2vw;
+  position: relative;
+  top: -2vw;
+  z-index: 100;
+
+  border: 2px solid white;
+}
+
+header > img {
+  width: 6vw;
+  height: 6vw;
+
+  position: relative;
+  top: 2vw;
+  left: 2vw;
+}
+
+.header {
+  position: relative;
+  left: 30vw;
+  bottom: 2.7vw;
+
+  font-size: 3em;
+}
+
+.nav-bar {
+  padding: 0;
+  margin: 0;
+
+  position: relative;
+  bottom: 3vw;
+  left: 75vw;
+  z-index: 100;
+}
+
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  font-size: 1.2em;
+  padding: .5em;
+}
+
+/*LINK STYLING*/
+li a:link {
+  color: white;
+}
+
+li a:active {
+  color: blue;
+}
+li a:visited {
+  color: white;
+}
+
+li a:hover {
+  color: cyan;
+}
+
+p a:link {
+  color: lightgreen;
+}
+
+p a:active {
+  color: blue;
+}
+
+p a:visited {
+  color: lightgreen;
+}
+
+p a:hover {
+  color: cyan;
+}
+
+
+
+.rl-symbol:hover {
+  animation-name: rl-symbol;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.left-panel {
+  grid-area: left-panel;
+  background-color: #2E3133;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, minmax(20vw, auto));
+  display: grid;
+  grid-template-areas:
+  "vid1"
+  "vid2"
+  ;
+
+  border: 1px solid white;
+}
+
+.right-panel {
+  grid-area: right-panel;
+  background-color: #2E3133;
+  padding: 5em;
+
+  border: 1px solid white;
+
+  color: #E3E4EF;
+  font-size: 1em;
+}
+
+.right-panel-header {
+  text-decoration: underline;
+  font-size: 2em;
+  position: relative;
+  bottom: 2vw;
+}
+
+.right-panel-content {
+  position: relative;
+  bottom: 2vw;
+
+}
+
+.my-stats {
+  width: 40vw;
+  height: 7vw;
+  padding-top: 3vw;
+}
+
+
+
+/* Deals Styling*/
+.deals {
+  grid-area: deals;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr .5fr;
+  background-color: gray;
+  border: 1px solid white;
+  padding: 1em;
+  z-index: 1;
+}
+
+.deals-list {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  left: -3vw;
+}
+
+.deal1 {
+  border: 1px solid black;
+
+  padding: 5vw;
+  position: relative;
+  left: 8vw;
+}
+.deal2 {
+  border: 1px solid black;
+
+  padding: 5vw;
+  position: relative;
+  left: 11vw;
+}
+
+.deal3 {
+  border: 1px solid black;
+
+  padding: 5vw;
+  position: relative;
+  left: 14vw;
+}
+
+.deal {
+  box-shadow: 15px 10px 5px 5px #6B6B6B;
+  font-size: 1.4em;
+}
+
+.deal-header{
+  position: relative;
+  left: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.deal-button {
+  padding: 1em;
+  position: relative;
+  left: 5vw;
+
+  background-color: black;
+  color: white;
+  border: 2px outset black;
+}
+
+.bronze {
+  color: #D4940B;
+  text-shadow: 1px 1px black;
+}
+
+.plat {
+  color: #92C0D8;
+  text-shadow: 1px 1px black;
+}
+
+.champ {
+  color:#EF92FF;
+  text-shadow: 1px 1px black;
+}
+td {
+  border: 1px solid black;
+  padding: .5em;
+}
+
+.email {
+  position: relative;
+  left: 42vw;
+  top: 5vw;
+}
+p.email {
+  position: relative;
+  left: 40vw;
+  font-size: 1.3em;
+}
+
+input.email {
+  border: 2px inset black;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #0D0D0D;
+  color: white;
+  padding: 5em;
+
+  border: 1px solid white;
+}
+
+
+iframe {
+  width: 30vw;
+  height: 16vw;
+  margin: 0em;
+  position: relative;
+  top: 1em;
+  left:5em;
+}
+
+.video1 {
+  grid-area: vid1;
+  position: relative;
+  left: 9vw;
+  top: 3vw;
+}
+
+.video2 {
+  grid-area: vid2;
+  position: relative;
+  left: 9vw;
+}
+
+
+#submit {
+  padding: .5em;
+  margin-left: 3vw;
+  margin-top: .5em;
+  background-color: black;
+  color: white;
+  outline: 3px outset lightgray;
+}
+
+
+@media (max-width: 900px){
+  .wrapper {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "left-panel left-panel"
+    "right-panel right-panel"
+    "footer footer"
+    ;
+  }
+
+  .left-panel {
+    grid-template-rows: minmax(25vw, auto);
+    grid-template-columns: repeat(2,auto);
+
+    grid-template-areas:
+    "vid1 vid2"
+    ;
+  }
+
+  .video2 {
+      top: 3vw;
+  }
+}
+
+@keyframes rl-symbol {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

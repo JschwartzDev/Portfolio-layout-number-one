@@ -72,7 +72,7 @@ main {
   grid-row: 2/8;
   background-color: #9BABB2;
   height: 60vw;
-
+  height: 45vw;
   border: 3px inset black;
   font-size: 1.3em;
   color: #000;
